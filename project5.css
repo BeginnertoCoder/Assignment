@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: #f7f7f7;
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    gap: 20px;
+  }
+  
+  .left-section {
+    width: 50%;
+    position: relative;
+  }
+  
+  .model-img {
+    width: 60%;
+    margin-top: 20px;
+  }
+  
+  .tagline {
+    font-weight: bold;
+    color: #f39c12;
+  }
+  
+  .heading {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .price-box {
+    background: #fff;
+    padding: 15px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 60%;
+  }
+  
+  .price {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .right-section {
+    width: 50%;
+  }
+  
+  .right-section ul {
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+  
+  .offer-box {
+    margin-top: 25px;
+  }
+  
+  .offer-price {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .old {
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 10px;
+  }
+  
+  #buyBtn {
+    background: #ff8c2a;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* ============ SMALL DEVICES (max-width: 576px) ============ */
+  @media (max-width: 576px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .left-section, .right-section {
+      width: 100%;
+    }
+  
+    .price-box {
+      width: 100%;
+    }
+  
+    .model-img {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  
+  /* ============ MEDIUM DEVICES (min-width: 577px) and (max-width: 768px) ============ */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      padding: 25px;
+    }
+  
+    .left-section, .right-section {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .price-box {
+      width: 70%;
+      margin: 0 auto;
+    }
+  
+    .model-img {
+      width: 55%;
+      margin: auto;
+    }
+  }
